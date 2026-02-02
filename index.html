@@ -1,513 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoenix Store | Premium Clothing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Phoenix Clothing Co.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <div>Free shipping on orders over $50</div>
-                <div class="header-links">
-                    <a href="#"><i class="fas fa-phone"></i> Contact Us</a>
-                    <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+
+    <div class="page-wrapper">
+        <div class="promo-bar">
+            <div class="inner-width">
+                <div class="promo-text">Free delivery on orders $50+</div>
+                <div class="promo-links">
+                    <a href="#"><i class="fas fa-phone"></i> Call Us</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Support</a>
                 </div>
             </div>
         </div>
         
-        <div class="main-header">
-            <div class="container">
-                <button class="mobile-menu-btn">
+        <div class="site-header">
+            <div class="inner-width">
+                <button class="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
                 
-                <div class="logo">
-                    <i class="fas fa-fire"></i> Phoenix Store
+                <div class="brand">
+                    <i class="fas fa-fire"></i> Phoenix Co.
                 </div>
                 
-                <div class="search_bar">
-                    <input type="text" placeholder="Search for products...">
+                <div class="search-box">
+                    <input type="search" placeholder="Find products...">
                     <button><i class="fas fa-search"></i></button>
                 </div>
                 
-                <div class="header-buttons">
-                    <div class="user-icon" id="userIcon">
+                <div class="user-actions">
+                    <div class="profile-btn" id="profileBtn">
                         <i class="fas fa-user-circle fa-2x"></i>
                     </div>
-                    <div class="cart-icon" id="cartIcon">
-                        <i class="fas fa-shopping-cart fa-2x"></i>
-                        <span class="cart-count">0</span>
+                    <div class="basket-btn" id="basketBtn">
+                        <i class="fas fa-shopping-basket fa-2x"></i>
+                        <span class="basket-counter">0</span>
                     </div>
                 </div>
             </div>
         </div>
         
-        <nav>
-            <div class="container">
-                <ul class="nav-links">
+        <div class="main-nav">
+            <div class="inner-width">
+                <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li>
                         <a href="#">Men <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="#">T-Shirts</a></li>
+                        <ul class="submenu">
+                            <li><a href="#">Tees</a></li>
                             <li><a href="#">Shirts</a></li>
-                            <li><a href="#">Jeans</a></li>
-                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">Outerwear</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">Women <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown">
+                        <ul class="submenu">
                             <li><a href="#">Dresses</a></li>
                             <li><a href="#">Tops</a></li>
                             <li><a href="#">Jeans</a></li>
-                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Coats</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Best Sellers</a></li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Just In</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Clearance</a></li>
+                    <li><a href="#">Our Story</a></li>
                 </ul>
             </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Rise in Style with Phoenix Store</h1>
-            <p>Discover premium clothing that combines comfort, style, and quality. From casual wear to formal attire, we have everything you need to elevate your wardrobe.</p>
-            <a href="#products" class="btn">Shop Now</a>
         </div>
-    </section>
 
-    <!-- Products Section -->
-    <section id="products">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="men">Men</button>
-                <button class="filter-btn" data-filter="women">Women</button>
-                <button class="filter-btn" data-filter="sale">On Sale</button>
-            </div>
-            
-            <div class="products-grid" id="container">
-                <!-- Products will be dynamically generated here -->
+        <div class="banner">
+            <div class="inner-width">
+                <h1>Elevate Your Style with Phoenix</h1>
+                <p>Find clothing that blends comfort, design, and craftsmanship. Refresh your look with pieces that work for any occasion.</p>
+                <a href="#items" class="cta-button">Start Shopping</a>
             </div>
         </div>
-    </section>
+        
+        <section id="items">
+            <div class="inner-width">
+                <h2 class="heading">Curated Collection</h2>
+                
+                <div class="category-tabs">
+                    <button class="tab active" data-tag="all">Everything</button>
+                    <button class="tab" data-tag="men">Men</button>
+                    <button class="tab" data-tag="women">Women</button>
+                    <button class="tab" data-tag="sale">Discounted</button>
+                </div>
+                
+                <div class="items-grid" id="itemsContainer">
+   
+                </div>
+            </div>
+        </section>
 
-    <!-- Cart Modal -->
-    <div class="modal" id="cartModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Your Shopping Cart</h2>
-                <button class="close-modal" id="closeCart">&times;</button>
-            </div>
-            <div class="cart-items" id="cartItems">
-                <!-- Cart items will be dynamically generated here -->
-            </div>
-            <div class="cart-summary">
-                <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
-                <button class="btn" id="checkoutBtn">Proceed to Checkout</button>
+        <div class="basket-modal" id="basketModal">
+            <div class="modal-inner">
+                <div class="modal-top">
+                    <h2>Your Basket</h2>
+                    <button class="modal-close" id="closeBasket">&times;</button>
+                </div>
+                <div class="basket-list" id="basketList">
+     
+                </div>
+                <div class="basket-footer">
+                    <div class="total">Total: $<span id="totalAmount">0.00</span></div>
+                    <button class="cta-button" id="purchaseBtn">Complete Order</button>
+                </div>
             </div>
         </div>
+
+        <footer>
+            <div class="inner-width">
+                <div class="footer-grid">
+                    <div class="footer-block">
+                        <h3>Phoenix Co.</h3>
+                        <p>Stand out with our thoughtfully designed apparel. Every item is made for real life.</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-block">
+                        <h3>Browse</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">New Items</a></li>
+                            <li><a href="#">Clearance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block">
+                        <h3>Support</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Get in Touch</a></li>
+                            <li><a href="#">Common Questions</a></li>
+                            <li><a href="#">Delivery Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Sizing Help</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-block">
+                        <h3>Stay Updated</h3>
+                        <p>Get news about new arrivals and special offers.</p>
+                        <div class="email-signup">
+                            <input type="email" placeholder="Enter your email">
+                            <button class="cta-button">Join</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    &copy; 2026 Phoenix Clothing Co. All rights reserved.
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Phoenix Store</h3>
-                    <p>Rise from the ordinary with our premium clothing collection. Quality, style, and comfort in every piece.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer_links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Sale</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Customer Services</h3>
-                    <ul class="footer_links">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Returns & Exchanges</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to get updates on new arrivals and exclusive offers.</p>
-                    <div class="newsletter">
-                        <input type="email" placeholder="Your email address">
-                        <button class="btn" style="width: 100%;">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                &copy; 2026 Phoenix Store. All rights reserved.<i class="heart" style="color: var(--primary);"></i>
-            </div>
-        </div>
-    </footer>
-
     <script>
-        // Products Data
-        const products = [
-            { id: 1, name: "Plain Phoenix T-Shirt", category: "women", price: 24.99, sale: false, image: "https://plus.unsplash.com/premium_photo-1691367279675-0e466cfb5135?fm=jpg&q=60&w=500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", rating: 4.5 },
-            { id: 2, name: "Women's Floral Dress", category: "women", price: 49.99, sale: true, image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.8 },
-            { id: 3, name: "Men's Denim Jacket", category: "men", price: 79.99, sale: false, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.7 },
-            { id: 4, name: "Women's High-Waist Jeans", category: "women", price: 59.99, sale: false, image: "https://images.unsplash.com/photo-1738618806206-b2cb6331193c?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", rating: 4.4 },
-            { id: 5, name: "Unisex Hoodie", category: "men", price: 44.99, sale: true, image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.6 },
-            { id: 6, name: "Women's Blazer", category: "women", price: 89.99, sale: false, image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.9 },
-            { id: 7, name: "Men's Casual Shirt", category: "men", price: 39.99, sale: true, image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.3 },
-            { id: 8, name: "Women's Summer Top", category: "women", price: 29.99, sale: false, image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.5 },
-            { id: 9, name: "Men's Joggers", category: "men", price: 34.99, sale: false, image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.2 },
-            { id: 10, name: "Women's Leather Jacket", category: "women", price: 119.99, sale: true, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", rating: 4.9 },
-            { id: 11, name: "Syndey Sweeny jeans", category: "unisex", price: 500.00, sale: true, image: "https://plus.unsplash.com/premium_photo-1691367279313-71af7ba83f2d?q=80&w=500", rating: 5 },
-            { id: 12, name: "Gen Z sunglasses", category: "unisex", price: 300.00, sale: false, image: "https://plus.unsplash.com/premium_photo-1673757119677-6445b73a405e?q=80&w=500", rating: 4.9}
+        const itemList = [
+            { id: 1, name: "Basic Phoenix Tee", category: "women", price: 24.99, onSale: false, image: "https://plus.unsplash.com/premium_photo-1691367279675-0e466cfb5135?fm=jpg&q=60&w=500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", stars: 4.5 },
+            { id: 2, name: "Floral Print Dress", category: "women", price: 49.99, onSale: true, image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.8 },
+            { id: 3, name: "Denim Jacket Men's", category: "men", price: 79.99, onSale: false, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.7 },
+            { id: 4, name: "Women's Classic Jeans", category: "women", price: 59.99, onSale: false, image: "https://images.unsplash.com/photo-1738618806206-b2cb6331193c?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", stars: 4.4 },
+            { id: 5, name: "Everyday Hoodie", category: "men", price: 44.99, onSale: true, image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.6 },
+            { id: 6, name: "Tailored Blazer", category: "women", price: 89.99, onSale: false, image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.9 },
+            { id: 7, name: "Casual Button-Down", category: "men", price: 39.99, onSale: true, image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.3 },
+            { id: 8, name: "Summer Tank Top", category: "women", price: 29.99, onSale: false, image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.5 },
+            { id: 9, name: "Comfort Joggers", category: "men", price: 34.99, onSale: false, image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.2 },
+            { id: 10, name: "Women's Leather Coat", category: "women", price: 119.99, onSale: true, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", stars: 4.9 },
+            { id: 11, name: "Sydney Jeans", category: "unisex", price: 500.00, onSale: true, image: "https://plus.unsplash.com/premium_photo-1691367279313-71af7ba83f2d?q=80&w=500", stars: 5 },
+            { id: 12, name: "Trend Sunglasses", category: "unisex", price: 300.00, onSale: false, image: "https://plus.unsplash.com/premium_photo-1673757119677-6445b73a405e?q=80&w=500", stars: 4.9}
         ];
 
-        // Cart data
-        let cart = [];
-        let cartCount = 0;
-        let cartTotal = 0;
+        let basket = [];
+        let itemCount = 0;
+        let totalPrice = 0;
 
-        // DOM Elements
-        const container = document.getElementById('container');
-        const cartIcon = document.getElementById('cartIcon');
-        const cartModal = document.getElementById('cartModal');
-        const closeCart = document.getElementById('closeCart');
-        const cartItemsContainer = document.getElementById('cartItems');
-        const cartTotalElement = document.getElementById('cartTotal');
-        const cartCountElement = document.querySelector('.cart-count');
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        const checkoutBtn = document.getElementById('checkoutBtn');
+        const itemsContainer = document.getElementById('itemsContainer');
+        const basketBtn = document.getElementById('basketBtn');
+        const basketModal = document.getElementById('basketModal');
+        const closeBasket = document.getElementById('closeBasket');
+        const basketList = document.getElementById('basketList');
+        const totalAmount = document.getElementById('totalAmount');
+        const basketCounter = document.querySelector('.basket-counter');
+        const tabs = document.querySelectorAll('.tab');
+        const navToggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.menu');
+        const purchaseBtn = document.getElementById('purchaseBtn');
 
-        // Initialize the store
         document.addEventListener('DOMContentLoaded', function() {
-            products_render(products);
-            setupEventListeners();
-            loadCartFromStorage();
-            updateCartUI();
+            displayItems(itemList);
+            attachEvents();
+            loadBasket();
+            refreshBasket();
         });
 
-        // Render products to the page
-        function products_render(productsToRender) {
-            container.innerHTML = '';
+        function displayItems(items) {
+            itemsContainer.innerHTML = '';
             
-            productsToRender.forEach(product => {
+            items.forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'product-card';
-                card.setAttribute('data-category', product.category);
-                card.setAttribute('data-sale', product.sale);
+                card.className = 'item-card';
+                card.setAttribute('data-type', item.category);
+                card.setAttribute('data-sale', item.onSale);
                 
-                const saleBadge = product.sale ? '<span class="sale-badge">SALE</span>' : '';
+                const saleTag = item.onSale ? '<span class="sale-tag">SALE</span>' : '';
                 
                 card.innerHTML = `
-                    <div class="product-img">
-                        <img src="${product.image}" alt="${product.name}">
+                    <div class="item-image">
+                        <img src="${item.image}" alt="${item.name}">
                     </div>
-                    <div class="product-info">
-                        <h3 class="product-title">${product.name}</h3>
-                        <div class="product-rating">
-                            ${generateRatingStars(product.rating)}
-                            <span>(${product.rating})</span>
+                    <div class="item-details">
+                        <h3 class="item-name">${item.name}</h3>
+                        <div class="rating">
+                            ${makeStars(item.stars)}
+                            <span>(${item.stars})</span>
                         </div>
-                        <div class="product-price">$${product.price.toFixed(2)}${product.sale ? ' <span style="color:var(--gray);text-decoration:line-through;font-size:0.9rem;margin-left:5px;">$' + (product.price * 1.2).toFixed(2) + '</span>' : ''}</div>
-                        <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+                        <div class="price">$${item.price.toFixed(2)}${item.onSale ? ' <span class="old-price">$' + (item.price * 1.2).toFixed(2) + '</span>' : ''}</div>
+                        <button class="add-btn" data-item="${item.id}">Add to Basket</button>
                     </div>
                 `;
                 
-                container.appendChild(card);
+                itemsContainer.appendChild(card);
             });
             
-            // Add event listeners to "Add to Cart" buttons
-            document.querySelectorAll('.add-to-cart').forEach(button => {
-                button.addEventListener('click', function() {
-                    const productId = parseInt(this.getAttribute('data-id'));
-                    addToCart(productId);
+            document.querySelectorAll('.add-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const itemId = parseInt(this.getAttribute('data-item'));
+                    putInBasket(itemId);
                 });
             });
         }
 
-        // Generate star rating HTML
-        function generateRatingStars(rating) {
-            let stars = '';
-            const fullStars = Math.floor(rating);
-            const hasHalfStar = rating % 1 >= 0.5;
+        function makeStars(rating) {
+            let starHtml = '';
+            const wholeStars = Math.floor(rating);
+            const hasPartial = rating % 1 >= 0.5;
             
-            for (let i = 0; i < fullStars; i++) {
-                stars += '<i class="fas fa-star"></i>';
+            for (let i = 0; i < wholeStars; i++) {
+                starHtml += '<i class="fas fa-star"></i>';
             }
             
-            if (hasHalfStar) {
-                stars += '<i class="fas fa-star-half-alt"></i>';
+            if (hasPartial) {
+                starHtml += '<i class="fas fa-star-half-alt"></i>';
             }
             
-            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-            for (let i = 0; i < emptyStars; i++) {
-                stars += '<i class="far fa-star"></i>';
+            const remaining = 5 - wholeStars - (hasPartial ? 1 : 0);
+            for (let i = 0; i < remaining; i++) {
+                starHtml += '<i class="far fa-star"></i>';
             }
             
-            return stars;
+            return starHtml;
         }
 
-        // Filter products by category
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                
-                // Add active class to clicked button
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
                 this.classList.add('active');
+                const filterType = this.getAttribute('data-tag');
+                let filtered = itemList;
                 
-                const filter = this.getAttribute('data-filter');
-                let filteredProducts = products;
-                
-                if (filter === 'men') {
-                    filteredProducts = products.filter(product => product.category === 'men');
-                } else if (filter === 'women') {
-                    filteredProducts = products.filter(product => product.category === 'women');
-                } else if (filter === 'sale') {
-                    filteredProducts = products.filter(product => product.sale === true);
+                if (filterType === 'men') {
+                    filtered = itemList.filter(item => item.category === 'men');
+                } else if (filterType === 'women') {
+                    filtered = itemList.filter(item => item.category === 'women');
+                } else if (filterType === 'sale') {
+                    filtered = itemList.filter(item => item.onSale === true);
                 }
                 
-                products_render(filteredProducts);
+                displayItems(filtered);
             });
         });
 
-        // Cart functionality
-        function addToCart(productId) {
-            const product = products.find(p => p.id === productId);
+        function putInBasket(itemId) {
+            const product = itemList.find(p => p.id === itemId);
+            const alreadyInBasket = basket.find(i => i.id === itemId);
             
-            // Check if product is already in cart
-            const existingItem = cart.find(item => item.id === productId);
-            
-            if (existingItem) {
-                existingItem.quantity += 1;
+            if (alreadyInBasket) {
+                alreadyInBasket.qty += 1;
             } else {
-                cart.push({
+                basket.push({
                     id: product.id,
                     name: product.name,
                     price: product.price,
                     image: product.image,
-                    quantity: 1
+                    qty: 1
                 });
             }
             
-            updateCartUI();
-            saveCartToStorage();
-            
-            // Show confirmation
-            alert(`${product.name} has been added to your cart!`);
+            refreshBasket();
+            saveBasket();
+            alert(`${product.name} was added to your basket`);
         }
 
-        function removeFromCart(productId) {
-            cart = cart.filter(item => item.id !== productId);
-            updateCartUI();
-            saveCartToStorage();
+        function takeFromBasket(itemId) {
+            basket = basket.filter(item => item.id !== itemId);
+            refreshBasket();
+            saveBasket();
         }
 
-        function updateQuantity(productId, newQuantity) {
-            if (newQuantity < 1) {
-                removeFromCart(productId);
+        function changeQty(itemId, newQty) {
+            if (newQty < 1) {
+                takeFromBasket(itemId);
                 return;
             }
             
-            const item = cart.find(item => item.id === productId);
+            const item = basket.find(item => item.id === itemId);
             if (item) {
-                item.quantity = newQuantity;
-                updateCartUI();
-                saveCartToStorage();
+                item.qty = newQty;
+                refreshBasket();
+                saveBasket();
             }
         }
 
-        function updateCartUI() {
-            // Update cart count
-            cartCount = cart.reduce((total, item) => total + item.quantity, 0);
-            cartCountElement.textContent = cartCount;
-            
-            // Update cart total
-            cartTotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-            cartTotalElement.textContent = cartTotal.toFixed(2);
-            
-            // Update cart items in modal
-            renderCartItems();
+        function refreshBasket() {
+            itemCount = basket.reduce((sum, item) => sum + item.qty, 0);
+            basketCounter.textContent = itemCount;
+            totalPrice = basket.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            totalAmount.textContent = totalPrice.toFixed(2);
+            showBasketItems();
         }
 
-        function renderCartItems() {
-            cartItemsContainer.innerHTML = '';
+        function showBasketItems() {
+            basketList.innerHTML = '';
             
-            if (cart.length === 0) {
-                cartItemsContainer.innerHTML = '<p style="text-align:center;padding:30px;">Your cart is empty</p>';
+            if (basket.length === 0) {
+                basketList.innerHTML = '<p class="empty-msg">Your basket is currently empty</p>';
                 return;
             }
             
-            cart.forEach(item => {
-                const cartItem = document.createElement('div');
-                cartItem.className = 'cart-item';
-                cartItem.innerHTML = `
-                    <img src="${item.image}" alt="${item.name}" class="cart-item-img">
-                    <div class="cart-item-details">
-                        <div class="cart-item-title">${item.name}</div>
-                        <div class="cart-item-price">$${item.price.toFixed(2)} each</div>
-                        <div class="cart-item-quantity">
-                            <button class="quantity-btn decrease" data-id="${item.id}">-</button>
-                            <input type="number" class="quantity-input" value="${item.quantity}" min="1" data-id="${item.id}">
-                            <button class="quantity-btn increase" data-id="${item.id}">+</button>
-                            <button class="remove-item" data-id="${item.id}">Remove</button>
+            basket.forEach(item => {
+                const basketItem = document.createElement('div');
+                basketItem.className = 'basket-item';
+                basketItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="item-thumb">
+                    <div class="item-info">
+                        <div class="item-title">${item.name}</div>
+                        <div class="item-price">$${item.price.toFixed(2)} each</div>
+                        <div class="qty-controls">
+                            <button class="qty-minus" data-id="${item.id}">-</button>
+                            <input type="number" class="qty-input" value="${item.qty}" min="1" data-id="${item.id}">
+                            <button class="qty-plus" data-id="${item.id}">+</button>
+                            <button class="delete-item" data-id="${item.id}">Delete</button>
                         </div>
                     </div>
-                    <div class="cart-item-subtotal">$${(item.price * item.quantity).toFixed(2)}</div>
+                    <div class="item-total">$${(item.price * item.qty).toFixed(2)}</div>
                 `;
                 
-                cartItemsContainer.appendChild(cartItem);
+                basketList.appendChild(basketItem);
             });
             
-            // Add event listeners to quantity buttons
-            document.querySelectorAll('.quantity-btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    const productId = parseInt(this.getAttribute('data-id'));
-                    const isIncrease = this.classList.contains('increase');
-                    const isDecrease = this.classList.contains('decrease');
-                    const item = cart.find(item => item.id === productId);
-                    
-                    if (isIncrease) {
-                        updateQuantity(productId, item.quantity + 1);
-                    } else if (isDecrease) {
-                        updateQuantity(productId, item.quantity - 1);
-                    }
+            document.querySelectorAll('.qty-minus').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const itemId = parseInt(this.getAttribute('data-id'));
+                    const item = basket.find(i => i.id === itemId);
+                    changeQty(itemId, item.qty - 1);
                 });
             });
             
-            // Add event listeners to quantity inputs
-            document.querySelectorAll('.quantity-input').forEach(input => {
+            document.querySelectorAll('.qty-plus').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const itemId = parseInt(this.getAttribute('data-id'));
+                    const item = basket.find(i => i.id === itemId);
+                    changeQty(itemId, item.qty + 1);
+                });
+            });
+            
+            document.querySelectorAll('.qty-input').forEach(input => {
                 input.addEventListener('change', function() {
-                    const productId = parseInt(this.getAttribute('data-id'));
-                    const newQuantity = parseInt(this.value);
-                    
-                    if (newQuantity > 0) {
-                        updateQuantity(productId, newQuantity);
-                    }
+                    const itemId = parseInt(this.getAttribute('data-id'));
+                    const newQty = parseInt(this.value);
+                    if (newQty > 0) changeQty(itemId, newQty);
                 });
             });
             
-            // Add event listeners to remove buttons
-            document.querySelectorAll('.remove-item').forEach(button => {
-                button.addEventListener('click', function() {
-                    const productId = parseInt(this.getAttribute('data-id'));
-                    removeFromCart(productId);
+            document.querySelectorAll('.delete-item').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const itemId = parseInt(this.getAttribute('data-id'));
+                    takeFromBasket(itemId);
                 });
             });
         }
 
-        // Save cart to localStorage
-        function saveCartToStorage() {
-            localStorage.setItem('phoenixStoreCart', JSON.stringify(cart));
+        function saveBasket() {
+            localStorage.setItem('phoenixBasket', JSON.stringify(basket));
         }
 
-        // Load cart from localStorage
-        function loadCartFromStorage() {
-            const savedCart = localStorage.getItem('phoenixStoreCart');
-            if (savedCart) {
-                cart = JSON.parse(savedCart);
-            }
+        function loadBasket() {
+            const stored = localStorage.getItem('phoenixBasket');
+            if (stored) basket = JSON.parse(stored);
         }
 
-        // Setup event listeners
-        function setupEventListeners() {
-            // Cart modal
-            cartIcon.addEventListener('click', () => {
-                cartModal.style.display = 'flex';
+        function attachEvents() {
+            basketBtn.addEventListener('click', () => {
+                basketModal.style.display = 'flex';
             });
             
-            closeCart.addEventListener('click', () => {
-                cartModal.style.display = 'none';
+            closeBasket.addEventListener('click', () => {
+                basketModal.style.display = 'none';
             });
             
-            // Close modal when clicking outside
             window.addEventListener('click', (e) => {
-                if (e.target === cartModal) {
-                    cartModal.style.display = 'none';
-                }
+                if (e.target === basketModal) basketModal.style.display = 'none';
             });
             
-            // Mobile menu
-            mobileMenuBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
+            navToggle.addEventListener('click', () => {
+                menu.classList.toggle('open');
             });
             
-            // Checkout button
-            checkoutBtn.addEventListener('click', () => {
-                if (cart.length === 0) {
-                    alert('Your cart is empty!');
+            purchaseBtn.addEventListener('click', () => {
+                if (basket.length === 0) {
+                    alert('Your basket is empty!');
                     return;
                 }
-                
-                alert(`Thank you for your order! Total: $${cartTotal.toFixed(2)}`);
-                cart = [];
-                updateCartUI();
-                saveCartToStorage();
-                cartModal.style.display = 'none';
+                alert(`Order confirmed! Total: $${totalPrice.toFixed(2)}`);
+                basket = [];
+                refreshBasket();
+                saveBasket();
+                basketModal.style.display = 'none';
             });
             
-            // Search functionality
-            const searchInput = document.querySelector('.search_bar input');
-            const searchButton = document.querySelector('.search_bar button');
+            const searchField = document.querySelector('.search-box input');
+            const searchBtn = document.querySelector('.search-box button');
             
-            searchButton.addEventListener('click', search_perform);
-            searchInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    search_perform();
-                }
+            searchBtn.addEventListener('click', doSearch);
+            searchField.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') doSearch();
             });
             
-            function search_perform() {
-                const searchTerm = searchInput.value.toLowerCase().trim();
-                if (searchTerm === '') return;
+            function doSearch() {
+                const term = searchField.value.toLowerCase().trim();
+                if (!term) return;
                 
-                const filteredProducts = products.filter(product => 
-                    product.name.toLowerCase().includes(searchTerm)
+                const results = itemList.filter(item => 
+                    item.name.toLowerCase().includes(term)
                 );
                 
-                if (filteredProducts.length === 0) {
-                    alert('No products found matching your search.');
+                if (results.length === 0) {
+                    alert('No items match your search');
                 } else {
-                    products_render(filteredProducts);
-                    // Reset filter buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    document.querySelector('[data-filter="all"]').classList.add('active');
-                    
-                    // Scroll to products section
-                    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                    displayItems(results);
+                    tabs.forEach(t => t.classList.remove('active'));
+                    document.querySelector('[data-tag="all"]').classList.add('active');
+                    document.getElementById('items').scrollIntoView({ behavior: 'smooth' });
                 }
             }
         }
